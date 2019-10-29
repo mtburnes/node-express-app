@@ -27,6 +27,7 @@ app.get('/', function (req, res) {
     '/yo/Dr.Rogers <br>' +
     '/fortune <br>' +
     '/fancy/?first=Denise&last=Case <br>' +
+    '/ipAddress <br>' +
     '<br> <br>' +
     'Fork the source code from <a href="https://github.com/denisecase/node-express-app">https://github.com/denisecase/node-express-app</a>'
   )
@@ -104,6 +105,7 @@ app.listen(port, hostname, () => {
   console.log(`   Try /greeting/yourname`)
   console.log(`   Try /yo/Dr.Rogers`)
   console.log(`   Try /fancy/?first=Denise&last=Case`)
+  console.log(`   Try /ipAddress`)
   console.log('\n Hit CTRL-C CTRL-C to stop\n')
 })
 
