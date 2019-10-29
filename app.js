@@ -82,6 +82,11 @@ app.get('/fortune', (req,res) => {
   }
 })
 
+app.get('/ipAddress', (req,res) =>{
+  const ipRemote = req.connection.remoteAddress
+  res.send(`<H1>Your IP Address appears to be ${ipRemote}</H1>`)
+} )
+
 // Use middleware to handle all non-managed routes (e.g. /xyz)
 // https://expressjs.com/en/api.html#req.originalUrl
 app.use((req, res, next) => {
